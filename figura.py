@@ -8,12 +8,14 @@ class Triangle:
         self.A=a
         self.B=b
         self.C=c
-        
+
     def Perimetr(self):
-        AB=((self.A.x+self.B.x)**2+(self.A.y+self.B.y)**2)**0.5
-        BC=((self.B.x+self.C.x)**2+(self.B.y+self.C.y)**2)**0.5
-        AC=((self.A.x+self.C.x)**2+(self.A.y+self.C.y)**2)**0.5
-        return AB+BC+AC
+        self.AB=((self.A.x+self.B.x)**2+(self.A.y+self.B.y)**2)**0.5
+        self.BC=((self.B.x+self.C.x)**2+(self.B.y+self.C.y)**2)**0.5
+        self.AC=((self.A.x+self.C.x)**2+(self.A.y+self.C.y)**2)**0.5
+        return self.AB+self.BC+self.AC
+    def Square(self):
+        return (self.Perimetr()*(self.Perimetr()-self.AB)(self.Perimetr()-self.BC)(self.Perimetr()-self.AC))**0.5
 
 class Rectangle:
     def __init__(self,a,b,c,d):
