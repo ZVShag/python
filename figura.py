@@ -34,7 +34,11 @@ class Romb:
         self.A=a
         self.B=b
         self.C=c
-        self.D=d    
+        self.D=d  
+        self.A=a
+        self.B=b
+        self.C=c
+        self.D=d 
 print('Если хочешь создать треугольник нажми 1: \nЕсли хочешь создать прямоугольник нажми 2: \nЕсли хочешь создать квадрат нажми 3:\nЕсли хочешь создать ромб нажми 4:')
 f=int(input())
 if f==1:
